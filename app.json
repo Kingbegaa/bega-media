@@ -2,7 +2,7 @@
   "name":"BARAKA-MD-V2",
   "description":"Best whatsapp bot developed by Baraka bega+Ibrahim adams",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/e91c85e1b59ed200c1191.jpg",
+  "logo":"https://telegra.ph/file/3f7b2c1383eb12949907d.jpg",
   "repository":"https://github.com/ibraahadam/BARAKA-MD-V3",
   "succes_url":"/",
   "stack":"container",
@@ -42,7 +42,7 @@
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/e91c85e1b59ed200c1191.jpg",
+      "value":"https://telegra.ph/file/3f7b2c1383eb12949907d.jpg",
       "required":false
        
      },
@@ -81,7 +81,7 @@
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255762190568,255679513639,254710772666"
+    "value": "255762190568,254710772666"
   },
     "WARN_COUNT":
   {
