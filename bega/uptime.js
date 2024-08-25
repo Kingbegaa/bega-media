@@ -22,7 +22,7 @@ let flashspeed = (speed() - timestamp).toFixed(4)
 zokou({ nomCom: 'ping',
     desc: 'To check ping',
     Categorie: 'General',
-    reaction: '⚡️', 
+    reaction: '❄️', 
     fromMe: 'true', 
 
 
@@ -44,7 +44,7 @@ await repondre(`*_BARAKA-MD-V1 SPEED IS :_*_${flashspeed} MS_* `);
 zokou({ nomCom: 'uptime',
     desc: 'To check runtime',    
     Categorie: 'General',
-    reaction: '⚡️', 
+    reaction: '❄️', 
     fromMe: 'true', 
 
 
