@@ -10,5 +10,5 @@
 
 
 ## 📊 `GitHub Stats of Bot Contributors`
-[![Baraka bega GitHub stats](https://github-readme-stats.vercel.app/api?username=Barakabegaa&show_icons=true&theme=radical)](https://github.com/Barakabegaa)
+[![Kinge bega GitHub stats](https://github-readme-stats.vercel.app/api?username=Kingbega&show_icons=true&theme=radical)](https://github.com/Kingbega)
 
