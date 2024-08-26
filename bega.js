@@ -850,7 +850,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                     let cmsg =`
 ┌─❖
-│「  𝑩𝑨𝑹𝑨𝑲𝑨-𝑴𝑫-𝑽1 𝑰𝑺 𝑶𝑵𝑳𝑰𝑵𝑬 」
+│「  BARAKA-MD-V1  IS  ONLINE ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
 └┬❖ 
    │✑ Prefix [ ${prefixe} ]
    │✑ Commands : 208
