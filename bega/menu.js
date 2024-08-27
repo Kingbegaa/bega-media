@@ -37,14 +37,14 @@ const date = moment().format('DD/MM/YYYY');
 ┊❂╭─────────────────❂
 ┊✺┊ *User* : ${s.OWNER_NAME}
 ┊✺┊ *Mode* : ${mode}
-┊✺┊ *Commands* : 208
+┊✺┊ *Commands* : 240
 ┊✺┊ *Time* : ${temps}  
 ┊✺┊ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┊❂╰─────────────────❂
 ╰───────────────────❂ \n\n`;
     
     let menuMsg=`     
-*┊¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*
+*╭════════════════════════❂*   
 `;
 
     for (const cat in coms) {
