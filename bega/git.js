@@ -42,7 +42,7 @@ const date = moment().format('DD/MM/YYYY');
   `;
     
 let menuMsg = `
-  > *©Baraka bega*
+> *©Baraka bega*
 `;
 
    var lien = mybotpic();
