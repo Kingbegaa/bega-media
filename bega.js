@@ -850,11 +850,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
                     let cmsg =`
 ┌─❖
-│「  BARAKA-MD-V1  IS  ONLINE ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
+│「  BARAKA-MD-V2  IS  ONLINE ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
 └┬❖ 
    │✑ Prefix [ ${prefixe} ]
-   │✑ Commands : 208
-   │✑ Ram : 22.34/54.86 GB
+   │✑ Commands : 240
+   │✑ Ram : 24.38/64.86 GB
    │✑ Platform : Chrome Linux 
    │✑ Owner : Baraka Chacha Bega  
    └───────────────❒⁠⁠⁠⁠⁠⁠⁠⁠⁠`;
