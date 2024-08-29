@@ -167,7 +167,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍BARAKA-MD-V1 ONLINE🌍");
+            console.log("\t🌍BARAKA-MD-V2 ONLINE🌍");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -850,14 +850,14 @@ zk.ev.on('group-participants.update', async (group) => {
 
                     let cmsg =`
 ┌─❖
-│「  BARAKA-MD-V2  IS  ONLINE ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
+│「      BARAKA-MD-V2  IS  ONLINE     ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
 └┬❖ 
    │✑ Prefix [ ${prefixe} ]
-   │✑ Commands : 240
-   │✑ Ram : 24.38/64.86 GB
+   │✑ Commands : 208
+   │✑ Ram : 32.46/62.86 GB
    │✑ Platform : Chrome Linux 
    │✑ Owner : Baraka Chacha Bega  
-   └───────────────❒⁠⁠⁠⁠⁠⁠⁠⁠⁠`;
+   └─────────────────❒⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
