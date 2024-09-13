@@ -47,7 +47,7 @@ const sleep =  (ms) =>{
         type = 'not animated sticker'
       }
   
-      let msg = `   Baraka-Md-stickers-dl
+      let msg = `   𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -70,7 +70,7 @@ const sleep =  (ms) =>{
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "Baraka-Md",
+            author: "𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
@@ -487,7 +487,7 @@ zokou({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'BARAKA-MD-V2-TAG',
+            pack: '𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳-𝚃𝙰𝙶',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
