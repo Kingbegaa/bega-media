@@ -167,7 +167,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍BARAKA-MD-V2 ONLINE🌍");
+            console.log("\t🌍BARAKA-MD ONLINE🌍");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -430,7 +430,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Baraka-Md',
+                                        pack: '𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -528,7 +528,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Baraka-Md',
+                pack: '𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -672,13 +672,13 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*BARAKA-MD-V2 WELCOME MESSAGE*`;
+            let msg = `*𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴*`;
             let membres = group.participants;
             for (let membre of membres) {
-                msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
+                msg += ` \n❒ *𝙷𝙴𝚈* 🖐️ @${membre.split("@")[0]} 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙻. \n\n`;
             }
 
-            msg += `❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED* `;
+            msg += `❒ *𝚁𝙴𝙰𝙳 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽 𝚃𝙾 𝙰𝚅𝙾𝙸𝙳 𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝚁𝙴𝙼𝙾𝚅𝙴𝙳* `;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -850,7 +850,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                     let cmsg =`
 ┌─❖
-│「      BARAKA-MD-V2  IS  ONLINE     ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
+│「      BARAKA-MD  IS  ONLINE     ❒⁠⁠⁠⁠⁠⁠⁠⁠⁠
 └┬❖ 
    │✑ Prefix [ ${prefixe} ]
    │✑ Commands : 240
