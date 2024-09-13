@@ -1,6 +1,6 @@
 const {zokou} =require("../framework/zokou");
 
-king({ nomCom: "bible",
+zokou({ nomCom: "bible",
         reaction: "🎎",
         categorie: "General" }, async (dest, zk, commandeOptions) => {
     
