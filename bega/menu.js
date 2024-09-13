@@ -5,69 +5,77 @@ const { format } = require(__dirname + "/../framework/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
 
-zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", reaction:"📁",categorie: "Général" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
     var mode = "public";
     
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
+    if ((s.MODE).toLowerCase() != "oui") {
+        mode = "privé";
     }
 
+     
 
-    
- cm.map(async (com, index) => {
+    cm.map(async (com, index) => {
         if (!coms[com.categorie])
             coms[com.categorie] = [];
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('EAT');
+    moment.tz.setDefault('Etc/GMT');
 
-// Créer une date et une heure en EAT
+// Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭─────𝑩𝑨𝑹𝑨𝑲𝑨-𝑴𝑫-𝑽2──────❂
-┊❂╭─────────────────❂
-┊✺┊ *User* : ${s.OWNER_NAME}
-┊✺┊ *Mode* : ${mode}
-┊✺┊ *Commands* : 240
-┊✺┊ *Time* : ${temps}  
-┊✺┊ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┊❂╰─────────────────❂
-╰───────────────────❂ \n\n`;
+╭────✧${s.BOT}✧────◆
+│   *Préfixe* : ${s.PREFIXE}
+│   *Owner* : ${s.NOM_OWNER}
+│   *Mode* : ${mode}
+│   *Commandes* : ${cm.length}
+│   *Date* : ${date}
+│   *Heure* : ${temps}
+│   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│   *Plateforme* : ${os.platform()}
+│   *Développeurs* : Baraka
+╰─────✧WA-BOT✧─────◆ \n\n`;
     
-    let menuMsg=`     
-*╭════════════════════════❂*   
+let menuMsg = `
+👋 salut ${nomAuteurMessage} 👋
+
+*Voici la liste de mes commandes :*
+◇                             ◇
 `;
 
     for (const cat in coms) {
-        menuMsg += `*╭────❂* *${cat}* *❂*`;
+        menuMsg += `╭────❏ *${cat}* ❏`;
         for (const cmd of coms[cat]) {
-            menuMsg += `  
-*┊* ${cmd}`;
+            menuMsg += `
+│ ${cmd}`;
         }
         menuMsg += `
-*╰═════════════❂* \n`
+╰═════════════⊷ \n`
     }
 
     menuMsg += `
-                                   
- *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑩𝑨𝑹𝑨𝑲𝑨 𝑪𝑯𝑨𝑪𝑯𝑨 𝑩𝑬𝑮𝑨*
-*╰═════════════════════════❂*
+◇            ◇
+*»»————— ★ —————««*
+Pour utiliser  une  commande, tapez  ${prefixe}"nom de la commande"
+ 
+ powered by Baraka-Md 
+                                                
+*»»————— ★ —————««*
 `;
 
+    
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Baraka-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true}, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -77,7 +85,7 @@ const date = moment().format('DD/MM/YYYY');
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*Baraka-Tech*" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
