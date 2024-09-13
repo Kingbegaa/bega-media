@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
 
 
-await repondre(`*_BARAKA-MD-V2 SPEED IS :_*_${flashspeed} MS_* `);
+await repondre(`𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝚂𝙿𝙴𝙴𝙳 𝙸𝚂 :_*_${flashspeed} 𝙼𝚂 `);
 
 }
 );
@@ -52,7 +52,7 @@ zokou({ nomCom: 'uptime',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_Uptime of BARAKA-MD-V2 is: ${runtime(process.uptime())}_*`) 
+                 await repondre(`𝚄𝙿𝚃𝙸𝙼𝙴 𝙾𝙵 𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝙸𝚂: ${runtime(process.uptime())}`) 
 
    
 
@@ -80,7 +80,7 @@ zokou({ nomCom: 'ss',
 let linkkk = `https://api.maher-zubair.tech/misc/sstab?url=${linkk}&dimension=720x720`;
 
 let res = await getBuffer(linkkk);
-   let caption = '*Powered by BARAKA-MD-V1*' 
+   let caption = '*Powered by 𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳*' 
 
 await zk.sendMessage(dest, { image: res }, { caption: caption }, { quoted: ms });
 
