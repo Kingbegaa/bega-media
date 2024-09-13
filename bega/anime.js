@@ -131,7 +131,7 @@ zokou({
     const imdbData = response.data;
 
     let imdbInfo = "Tap on the link to join movie channel on telegram and download movies there : https://t.me/ibrahimtechai\n";
-    imdbInfo += " ```BARAKA-MD-V2 FILMS```\n";
+    imdbInfo += " ```𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝙵𝙸𝙻𝙼𝚂```\n";
     imdbInfo += "*Made by Baraka bega*\n";
     imdbInfo += "🎬Title    : " + imdbData.Title + "\n";
     imdbInfo += "📅year      : " + imdbData.Year + "\n";
@@ -165,7 +165,7 @@ zokou({
 });
 
 zokou({
-  nomCom: "emomix",
+  nomCom: "emojimix",
   categorie: "Conversion"
 }, async (dest, zk, commandeOptions) => {
   const { arg, repondre,ms , nomAuteurMessage } = commandeOptions;
