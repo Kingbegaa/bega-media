@@ -31,7 +31,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *Baraka-Md* 🌟
+        🌟 *𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳* 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Autor : *${nomAuteurMessage}* 👋 
@@ -251,7 +251,7 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Baraka-Md/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'Baraka-Md', // The pack name
+                pack: '𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -660,7 +660,7 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'Baraka-Mdtag',
+          pack: '𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
