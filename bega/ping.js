@@ -1,13 +1,22 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "test", reaction: "🧒", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-    console.log("Commande saisie !!!s");
-    let z = '*🌍𝑩𝒐𝒕 𝒊𝒔 𝒐𝒏𝒍𝒊𝒏𝒆🌍* 🙏 \n\n ' + "𝑻𝒉𝒆 𝒃𝒐𝒕 𝒊𝒔 𝒄𝒖𝒓𝒓𝒆𝒏𝒕𝒍𝒚 𝒘𝒐𝒓𝒌𝒊𝒏𝒈 𝒐𝒏 𝒂 𝒈𝒐𝒐𝒅 𝒔𝒑𝒆𝒆𝒅😉👍";
-    let d = '                                                                           𝑯𝒆𝒂𝒍𝒕𝒉 𝒔𝒕𝒂𝒕𝒖𝒔✨';
-    let varmess = z + d;
-    var mp4 = 'https://telegra.ph/file/ce58cf8c538b1496fda33.mp4';
-    await zk.sendMessage(dest, { video: { url: mp4 }, caption: varmess });
-    //console.log("montest")
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  'value': true
+});
+const {
+  zokou
+} = require("../framework/zokou");
+zokou({
+  'nomCom': "test",
+  'reaction': "🙂‍↔️",
+  'nomFichier': __filename
+}, async (_0x1e76fa, _0x562277, _0x45a4e6) => {
+  console.log("Commande saisie !!!s");
+  await _0x562277.sendMessage(_0x1e76fa, {
+    'video': {
+      'url': "https://files.catbox.moe/qq0lcf.mp4"
+    },
+    'caption': "*𝙱𝙾𝚃 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 🫠* \n\n 𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝙸𝚂 𝙲𝚄𝚁𝚁𝙴𝙽𝚃𝙻𝚈 𝚆𝙾𝚁𝙺𝙸𝙽𝙽𝙶 𝙾𝙽 𝙰 𝙶𝙾𝙾𝙳 𝚂𝙿𝙴𝙴𝙳.🫠"
+  });
 });
 console.log("mon test");
