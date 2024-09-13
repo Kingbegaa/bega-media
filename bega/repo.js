@@ -9,7 +9,7 @@ const {
 zokou({
   'nomCom': 'repo',
   'alia': 'sc',
-  'reaction': '✅',
+  'reaction': '📁',
   'nomFichier': __filename
 }, async (_0x4cc953, _0x5878e8, _0x52ecf0) => {
   const _0x5ebab8 = await fetch("https://api.github.com/repos/Kingbegaa/BARAKA-MD");
