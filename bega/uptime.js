@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
 
 
-await repondre(` *𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝚂𝙿𝙴𝙴𝙳 𝙸𝚂 :_*_${flashspeed} 𝙼𝚂* `);
+await repondre(` *𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝚂𝙿𝙴𝙴𝙳 𝙸𝚂* :_*_${flashspeed} 𝙼𝚂* `);
 
 }
 );
