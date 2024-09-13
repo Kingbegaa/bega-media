@@ -43,7 +43,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *BARAKA-MD-WABOT*`
+ *𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳-𝚆𝙰𝙱𝙾𝚃*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' Holla🥴, *BARAKA-MD-V2 BOT* is alive just like you gee. ')
+repondre(' 𝙷𝙴𝙻𝙻𝙾, *𝙱𝙰𝚁𝙰𝙺𝙰-𝙼𝙳 𝙱𝙾𝚃* 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴 𝙹𝚄𝚂𝚃 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄 𝙶𝙴𝙴. ')
 
 }
     });
